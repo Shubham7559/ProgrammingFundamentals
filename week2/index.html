@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Week 2
+        </title>
+        <style>
+            body{
+                margin :auto;
+                padding: 30px;
+            }
+            div{
+                width: 30%;
+                margin: 20px;
+                padding: 20px;
+            }
+            p{
+                padding-left:20px ;
+            }
+            .orange{
+                background-color: orange;
+            }
+            .back{
+                background-color:aqua ;
+            }
+            .roman{
+                background-color: burlywood;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Changing pages interactivity practice</h1>
+        <div id="div1" class="orange">
+            Here is div1
+        </div>
+        <div id="div2" class="back">
+            here is div2
+        </div>
+        <p>
+            <input type="button" value="color change" onclick="changecolor()">       </p>
+    </body>
+    <script>
+        function changecolor(){
+            var d1 = document.getElementById("div1");
+            var d2 = document.getElementById("div2");
+            d1.className = "roman";
+            d2.className = "orange";
+                }
+    </script>
+</html>
